@@ -7,12 +7,7 @@ Many of the files used here are based on the work done at MLCC 2018, at https://
 
 Each laboratory contains a solution file. Please do not jump to that immediately but rather use it as a resource when you are stuck.
 
-All source code was tested with the following setup:
-python 2.7
-numpy 1.16.4
-matplotlib 2.2.4
-scipy 1.2.2
-PyCharm IDE
+All source code was tested with the following setup: python 2.7, numpy 1.16.4, matplotlib 2.2.4, scipy 1.2.2, PyCharm IDE.
 
 You can download the code locally, but you can also use git. If you are new to using Github please check:
 https://www.tutorialspoint.com/git/
