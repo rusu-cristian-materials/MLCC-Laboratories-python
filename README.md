@@ -16,11 +16,14 @@ PyCharm IDE
 
 You can download the code locally, but you can also use git. If you are new to using Github please check:
 https://www.tutorialspoint.com/git/
+
 Traversy Media's "Git & GitHub Crash Course For Beginners" available at https://www.youtube.com/watch?v=SWYqp7iY_Tc
 
 If you are new to python then please check the following resources:
 https://docs.python.org/3/tutorial/
+
 https://www.learnpython.org/
+
 Mosh' "Python Tutorial for Beginners [Full Course] 2019" available at https://www.youtube.com/watch?v=_uQrJ0TkZlc
 
 Each laboratory has a pdf to guide you through the work. Start there and good luck!
