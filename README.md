@@ -18,7 +18,7 @@ You can download the code locally, but you can also use git. If you are new to u
 - Traversy Media's "Git & GitHub Crash Course For Beginners" available [here](https://www.youtube.com/watch?v=SWYqp7iY_Tc).
 
 If you are new to python then please check the following resources:
-- [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+- [https://docs.python.org/2/tutorial/](https://docs.python.org/2/tutorial/)
 - [https://www.learnpython.org/](https://www.learnpython.org/)
 - Mosh' "Python Tutorial for Beginners [Full Course] 2019" available [here](https://www.youtube.com/watch?v=_uQrJ0TkZlc).
 
