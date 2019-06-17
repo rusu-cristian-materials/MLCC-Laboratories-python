@@ -22,6 +22,8 @@ If you are new to python then please check the following resources:
 - [https://www.learnpython.org/](https://www.learnpython.org/)
 - Mosh' "Python Tutorial for Beginners [Full Course] 2019" available [here](https://www.youtube.com/watch?v=_uQrJ0TkZlc).
 
+If you are unable to install python and all dependencies on your system then please consider using an online system (like https://jupyter.org/try) and look at the MLCC 2018 resources [https://github.com/mzanetti79/MLCC18](https://github.com/mzanetti79/MLCC18).
+
 Each laboratory has a pdf to guide you through the work. Start there and good luck!
 
 June 2019,
