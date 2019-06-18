@@ -1,5 +1,5 @@
 import numpy as np
-from regularizedKernLSTest import *
+from regularizedKernLSTest import regularizedKernLSTest
 
 
 def separatingFKernRLS(c, Xtr, Ytr, kernel, sigma, Xte, axs):
@@ -52,7 +52,7 @@ def separatingFKernRLS(c, Xtr, Ytr, kernel, sigma, Xte, axs):
     colors = [-1, +1]
     cc = []
     for item in Ytr:
-        cc.append(colors[(int(item)+1)/2])
+        cc.append(colors[(int(item)+1)//2])
 
     axs.scatter(Xtr[:, 0], Xtr[:, 1], c=cc, s=50)
 
