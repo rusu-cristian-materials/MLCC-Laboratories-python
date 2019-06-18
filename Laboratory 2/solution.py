@@ -21,13 +21,13 @@ sigma = 0.8
 lam = 1E-5
 c = regularizedKernLSTrain(Xtr, Ytr, 'gaussian', sigma=sigma, lam=lam)
 separatingFKernRLS(c, Xtr, Ytr, 'gaussian', sigma=sigma, Xte=Xts, axs=axs[0])
-axs[0].set_title('kNN prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
+axs[0].set_title('kernel prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
 
 sigma = 0.05
 lam = 1E-5
 c = regularizedKernLSTrain(Xtr, Ytr, 'gaussian', sigma=sigma, lam=lam)
 separatingFKernRLS(c, Xtr, Ytr, 'gaussian', sigma=sigma, Xte=Xts, axs=axs[1])
-axs[1].set_title('kNN prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
+axs[1].set_title('kernel prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
 
 plt.tight_layout()
 plt.savefig('figure_1.png', dpi=100)
@@ -40,7 +40,7 @@ sigma = 0.1
 lam = 1E-1
 c = regularizedKernLSTrain(Xtr, Ytr_noisy, 'gaussian', sigma=sigma, lam=lam)
 separatingFKernRLS(c, Xtr, Ytr_noisy, 'gaussian', sigma=sigma, Xte=Xts, axs=axs)
-axs.set_title('kNN prediction, noisy, with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
+axs.set_title('kernel prediction, noisy, with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
 
 plt.tight_layout()
 plt.savefig('figure_2.png', dpi=100)
@@ -63,7 +63,7 @@ sigma = 0.1
 lam = 1E-5
 c = regularizedKernLSTrain(Xtr, Ytr, 'gaussian', sigma=sigma, lam=lam)
 separatingFKernRLS(c, Xtr, Ytr, 'gaussian', sigma=sigma, Xte=Xts, axs=axs)
-axs.set_title('kNN prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
+axs.set_title('kernel prediction with sigma = ' + str(sigma) + ', lambda = ' + str(lam))
 
 plt.tight_layout()
 plt.savefig('figure_4.png', dpi=100)
@@ -92,7 +92,7 @@ plt.savefig('figure_5.png', dpi=100)
 fig, axs = plt.subplots(1,  1)
 c = regularizedKernLSTrain(Xtr, Ytr, 'gaussian', sigma=s[0], lam=l[0])
 separatingFKernRLS(c, Xtr, Ytr, 'gaussian', sigma=s[0], Xte=Xts, axs=axs)
-axs.set_title('kNN prediction with best sigma = ' + str(s[0]) + ', best lambda = ' + str(l[0]))
+axs.set_title('kernel prediction with best sigma = ' + str(s[0]) + ', best lambda = ' + str(l[0]))
 sigma_best_gaus = s[0]
 
 plt.tight_layout()
@@ -111,7 +111,7 @@ l, s, vm, vs, tm, ts = holdoutCVKernRLS(Xtr, Ytr, perc, nrip, 'polynomial', lam_
 fig, axs = plt.subplots(1,  1)
 c = regularizedKernLSTrain(Xtr, Ytr, 'polynomial', sigma=s[0], lam=l[0])
 separatingFKernRLS(c, Xtr, Ytr, 'polynomial', sigma=s[0], Xte=Xts, axs=axs)
-axs.set_title('kNN prediction with poly best degree = ' + str(s[0]) + ', best lambda = ' + str(l[0]))
+axs.set_title('kernel prediction with poly best degree = ' + str(s[0]) + ', best lambda = ' + str(l[0]))
 sigma_best_poly = s[0]
 print('Best kernel polynomial has degree ' + str(sigma_best_poly))
 
