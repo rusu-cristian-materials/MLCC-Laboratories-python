@@ -69,12 +69,12 @@ Xtr = (Xtr - m) / s
 Xts = (Xts - m) / s
 
 ## 3.B and 3.C
-intIter = range(0, 10)
-perc = 0.75
+intIter = range(2, 10)
+perc = 0.80
 nrip = 20
 it_best, Vm, Vs, Tm, Ts = holdoutCVOMP(Xtr, Ytr, perc, nrip, intIter)
 
-w, r, I = OMatchingPursuit(Xtr, Ytr, it_best+1)
+w, r, I = OMatchingPursuit(Xtr, Ytr, it_best)
 Ypred = np.sign(Xts.dot(w))
 error = calcErr(Yts, Ypred)
 print('Classification error with OMP is ' + str(error))
