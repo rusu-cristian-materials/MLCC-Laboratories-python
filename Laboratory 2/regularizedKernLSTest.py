@@ -15,8 +15,6 @@ def regularizedKernLSTest(c, Xtr, kernel, sigma, Xte):
     y: predicted model values
 
     Example of usage:
-
-    from regularizationNetworks import regularizedKernLSTest
     y =  regularizedKernLSTest.regularizedkernlstest(c, Xtr, 'gaussian', 1, Xte)
     '''
 

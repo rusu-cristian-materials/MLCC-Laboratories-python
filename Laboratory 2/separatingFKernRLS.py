@@ -13,14 +13,9 @@ def separatingFKernRLS(c, Xtr, Ytr, kernel, sigma, Xte, axs):
     kernel: type of kernel ('linear', 'polynomial', 'gaussian')
     sigma: width of the gaussian kernel, if used
     Xte: test points
+    axs: the axis on which to draw
 
     Example of usage:
-
-    from regularizationNetworks import MixGauss
-    from regularizationNetworks import separatingFKernRLS
-    from regularizationNetworks import regularizedKernLSTrain
-    import numpy as np
-
     lam = 0.01
     kernel = 'gaussian'
     sigma = 1
@@ -29,7 +24,7 @@ def separatingFKernRLS(c, Xtr, Ytr, kernel, sigma, Xte, axs):
     Xts, Yts = MixGauss.mixgauss(np.matrix('0 1; 0 1'), np.matrix('0.5 0.3'), 100)
 
     c = regularizedKernLSTrain.regularizedkernlstrain(Xtr, Ytr, 'gaussian', sigma, lam)
-    separatingFKernRLS.separatingfkernrls(c, Xtr, Ytr, 'gaussian', sigma, Xte)
+    separatingFKernRLS.separatingfkernrls(c, Xtr, Ytr, 'gaussian', sigma, Xte, axs)
     '''
 
     step = 0.05
@@ -52,7 +47,7 @@ def separatingFKernRLS(c, Xtr, Ytr, kernel, sigma, Xte, axs):
     colors = [-1, +1]
     cc = []
     for item in Ytr:
-        cc.append(colors[(int(item)+1)/2])
+        cc.append(colors[(int(item)+1)//2])
 
     axs.scatter(Xtr[:, 0], Xtr[:, 1], c=cc, s=50)
 

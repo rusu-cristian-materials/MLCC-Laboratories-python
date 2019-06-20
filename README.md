@@ -1,4 +1,4 @@
-This repository stores the MLCC Laboratories for the MLCC (Machine Learning Crash Course) summer school.
+This repository stores the MLCC Laboratories for the MLCC (Machine Learning Crash Course) summer school [http://lcsl.mit.edu/#/courses](http://lcsl.mit.edu/#/courses).
 
 This version implements the code in python. Please see another repository for the Matlab implementation.
 

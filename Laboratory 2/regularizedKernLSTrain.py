@@ -13,8 +13,6 @@ def regularizedKernLSTrain(Xtr, Ytr, kernel, sigma, lam):
     c: model weights
 
     Example of usage:
-
-    from regularizationNetworks import regularizedKernLSTrain
     c =  regularizedKernLSTrain.regularizedKernLSTrain(Xtr, Ytr, 'gaussian', 1, 1E-1);'''
     n = Xtr.shape[0]
     K = kernelMatrix(Xtr, Xtr, sigma, kernel)

@@ -54,7 +54,7 @@ axs[0].scatter(Xts[:, 0], Xts[:, 1], s=100, c=Yts, alpha=0.3, marker='o', edgeco
 axs[0].scatter(Xts[:, 0], Xts[:, 1], s=30, c=Ypred, alpha=1, marker='^')
 
 error = np.mean(Ypred != Yts)
-print 'Error rate for kNN, with k = ' + str(k) + ' is ' + str(error) + '.'
+print('Error rate for kNN, with k = ' + str(k) + ' is ' + str(error) + '.')
 
 help(separatingFkNN)
 
